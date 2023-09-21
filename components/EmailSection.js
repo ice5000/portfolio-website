@@ -1,46 +1,10 @@
-'use client';
-import React, { useState} from "react";
+
 import GithubIcon from "./GithubIcon";
 import LinkedinIcon from "./LinkedinIcon";
 import Link from "next/link";
 
 
 const EmailSection = () => {
-  const [emailSubmitted, setEmailSubmitted] = useState(false);
-
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const data = {
-      email: e.target.email.value,
-      email: e.target.subject.value,
-      email: e.target.message.value,
-    }
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/email";
-
-    //Form the request for sending data to the server.
-    const options = {
-      //The method is POST because we are sending data.
-      method:'POST',
-      //Tell the server we're sending JSON.
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      // Body of the request is the JSON data we created above.
-      body: JSONdata
-
-    }
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
-    console.log(resData)
-
-    if (response.status === 200 ) {
-      console.log('Message sent.')
-      setEmailSubmitted(true);
-    }
-  };
-
   return (
     <section
       id="contact"
@@ -67,7 +31,7 @@ const EmailSection = () => {
         </div>
       </div>
       <div className="z-10">
-        <form className="flex flex-col" onSubmit={handleSubmit}>
+        <form className="flex flex-col" >
           <div className="mb-6">
             <label
               htmlFor="email"
@@ -120,14 +84,14 @@ const EmailSection = () => {
           >
             Send Message
           </button>
-          {
+          {/* {
             // If the email was submitted successfully, show a success message.
             emailSubmitted && (
-              <p className="text-green-500 text-sm mt-2">
-                Email sent successfully
-              </p>
+              // <p className="text-green-500 text-sm mt-2">
+              //   Email sent successfully
+              // </p>
             )
-          }
+          } */}
         </form>
       </div>
     </section>
