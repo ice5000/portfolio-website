@@ -11,8 +11,8 @@ const projectsData = [
     description: "Project 1 description",
     image: "/1.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/ice5000/portfolio-website",
+    previewUrl: "https://portfolio-website-ice5000.vercel.app/",
   },
   {
     id: 2,
@@ -20,8 +20,8 @@ const projectsData = [
     description: "Project 2 description",
     image: "/2.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/AlexCPT-cpu/AirBnbClone",
+    previewUrl: "https://air-bnb-clone-three-pi.vercel.app/",
   },
   {
     id: 3,
@@ -29,8 +29,8 @@ const projectsData = [
     description: "Project 3 description",
     image: "/3.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/AlexCPT-cpu/nft-marketplace",
+    previewUrl: "https://nft-marketplace-mu-blond.vercel.app/",
   },
   {
     id: 4,
@@ -47,8 +47,8 @@ const projectsData = [
     description: "Authentication and CRUD operations",
     image: "/5.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/AlexCPT-cpu/tackle",
+    previewUrl: "https://tackle-seven.vercel.app/",
   },
   {
     id: 6,
@@ -56,8 +56,8 @@ const projectsData = [
     description: "Project 5 description",
     image: "/6.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/AlexCPT-cpu/staking-pools",
+    previewUrl: "https://staking-pools-blue.vercel.app/",
   },
 ];
 
